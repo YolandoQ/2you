@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\User;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\ApiAuthController;
