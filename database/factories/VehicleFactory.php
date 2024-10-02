@@ -21,7 +21,7 @@ class VehicleFactory extends Factory
      */
     public function definition(): array
     {
-        return [
+        return [ 
             'category_id' => Category::factory(),
             'brand' => $this->faker->company(),
             'model' => $this->faker->word(),
