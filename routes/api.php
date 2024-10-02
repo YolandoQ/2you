@@ -14,6 +14,6 @@ Route::post('/login', [ApiAuthController::class, 'login'])->name('api.login');
 Route::post('/logout', [ApiAuthController::class, 'logout'])->middleware('auth:sanctum')->name('api.logout');
 
 Route::as('api.')->middleware('auth:sanctum')->group(function () {
-    Route::apiResource('veiculo', VehicleController::class);
+    Route::apiResource('veiculo', VehicleController::class); 
     Route::apiResource('categorias', CategoryController::class);
 });
